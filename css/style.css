@@ -113,7 +113,7 @@ footer {
 
 .footerContainer {
     width: 100%;
-    padding: 70px 30px 20px;
+    padding: 70px 0px 0px;
 }
 
 .socialIcons {
@@ -165,7 +165,8 @@ footer {
 }
 
 .footerBottom {
-    background-color: #000;
+    width: 100%;
+    background-color: black;
     padding: 20px;
     text-align: center;
 }
@@ -181,4 +182,20 @@ footer {
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+    navBar {
+        flex-direction: column;
+    }
+
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
 }
